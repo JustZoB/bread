@@ -4,31 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="style.css" rel="stylesheet">
+    <link href="normalize.css" rel="stylesheet">
     <title>Bread</title>
 </head>
 <body> <!--70~900, 760, 760, 760, 940, 220-->
-    <div class="page page-medium">
-        <div class="wrap-page">
-            <div class="headfolder"> 
-                <nav class="headfolder__nav">
-                    <div class="headfolder__nav__logo">
+    <div class="page__background-1 page-medium">
+        <div class="page__color_black page-extrasmall">
+            <div class="wrap-page">
+                <nav class="head-folder__nav"> 
+                    <div class="head-folder__nav__logo">
                         <img src="img/logo_gustoso.png" alt="Logo">
                     </div>
-                    <div class="headfolder__nav__menu">
-                        <ul class="headfolder__nav__menu_list">
-                            <li><a href="">Welcome</a></li>
-                            <li><a href="">Menu</a></li>
-                            <li><a href="">Reservations</a></li>
-                            <li><a href="">News</a></li>
-                            <li><a href="">Contact</a></li>
+                    <div class="head-folder__nav__menu">
+                        <ul class="head-folder__nav__menu__list">
+                            <li class="head-folder__nav__menu__list__item"><a href="">Welcome</a></li>
+                            <li class="head-folder__nav__menu__list__item">~</li>
+                            <li class="head-folder__nav__menu__list__item"><a href="">Menu</a></li>
+                            <li class="head-folder__nav__menu__list__item">~</li>
+                            <li class="head-folder__nav__menu__list__item"><a href="">Reservations</a></li>
+                            <li class="head-folder__nav__menu__list__item">~</li>
+                            <li class="head-folder__nav__menu__list__item"><a href="">News</a></li>
+                            <li class="head-folder__nav__menu__list__item">~</li>
+                            <li class="head-folder__nav__menu__list__item"><a href="">Contact</a></li>
                         </ul>
                     </div>
-                    <div class="headfolder__nav__social"></div>
+                    <div class="head-folder__nav__social">
+                        <p>Socialki</p>
+                    </div>
                 </nav>
-                <div class="headfolder__main">
-                    <h1 class="headfolder__main__head">Pastry with love</h1>
+            </div>
+        </div>
+        <div class="wrap-page">
+            <div class="head-folder"> 
+                <div class="head-folder__main">
+                    <h1 class="head-folder__main__head">Pastry with love</h1>
                     <img src="img/head_dashed-line.png" alt="Dashed line">
-                    <div>
+                    <div class="head-folder__main__text">
                         <p>We’re bringing you fresh ingredients every day in ways you can’t resist.</p>
                     </div>
                     <div>
@@ -39,85 +51,99 @@
         </div>
     </div>  
     <div class="main">
-        <div class="page page-small">
+        <div class="page__color_white page-small">
             <div class="wrap-page">
                 <div class="main__folder-1">
                     <div class="main__folder-1__left-column">
-                        <div>
+                        <div class="main__folder-1__left-column__head-container">
+                            <h2 class="headline__head">Art of cakes</h2>
+                            <p class="headline__signature">We create delicious memories</p>
+                        </div>
+                        <div class="text_small">
+                            <p>Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed.</p>
+                        </div>
+                        <div class="main__folder-1__left-column__chef-head">
+                            <h3 class="main__folder-1__left-column__chef-head__head">Chef Cook</h3>
+                        </div>
+                        <div class="main__folder-1__left-column__chef-name">
                             <div>
-                                <h2>Art of cakes</h2>
-                                <p>we create delicious memories</p>
+                                <hr>
+                                <p class="main__folder-1__left-column__chef-name__text">Benito</p>
+                                <hr>
                             </div>
                             <div>
-                                <p>Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed.</p>
-                            </div>
-                            <div>
-                                <p>Chef Cook</p>
-                            </div>
-                            <div>
-                                <span>Benito</span>
                                 <img src="img/body_first_left-column_chef.png" alt="Chef">
-                                <span>Gaspare</span>
                             </div>
                             <div>
-                                <img src="img/interface_“.png" alt="">
-                                <img src="img/body_first_left-column_quote.png" alt="">
-                                <img src="img/interface_”.png" alt="">
+                                <hr>
+                                <p class="main__folder-1__left-column__chef-name__text">Gaspare</p>
+                                <hr>
                             </div>
+                        </div>
+                        <div class="main__folder-1__left-column__chef-quote">
+                            <div class="main__folder-1__left-column__chef-quote__left-quote-mark"><img src="img/interface_“.png" alt=""></div>
+                            <div class="main__folder-1__left-column__chef-quote__quote"><img src="img/body_first_left-column_quote.png" alt=""></div>
+                            <div class="main__folder-1__left-column__chef-quote__right-quote-mark"><img src="img/interface_”.png" alt=""></div>
                         </div>
                     </div>
                     <div class="main__folder-1__right-column">
-                        <div>
-                            <p>Tastes so good!</p>
-                            <img src="img/body_first_right-column_center.png" alt="">
+                        <div class="main__folder-1__right-column__center-image">
+                            <p class="main__folder-1__right-column__center-image__text">Tastes so good!</p>
+                            <img class="main__folder-1__right-column__center-image__image" src="img/body_first_right-column_center.png" alt="">
                         </div>
-                        <img src="img/body_first_right-column_image_1.png" alt="">
-                        <img src="img/body_first_right-column_image_2.png" alt="">
-                        <img src="img/body_first_right-column_image_3.png" alt="">
-                        <img src="img/body_first_right-column_image_4.png" alt="">
+                        <img class="image__border_outline" src="img/body_first_right-column_image_1.png" alt="">
+                        <img class="image__border_outline" src="img/body_first_right-column_image_2.png" alt="">
+                        <img class="image__border_outline" src="img/body_first_right-column_image_3.png" alt="">
+                        <img class="image__border_outline" src="img/body_first_right-column_image_4.png" alt="">
                     </div>
                 </div>
             </div>
         </div>
         
-        <div class="page page-small">
+        <div class="page__background-2 page-small">
             <div class="wrap-page">
                 <div class="main__folder-2">
-                    <div class="main__folder-2__contant-folder">
-                        <div>
-                            <div>
-                                <img src="img/interface_star_active.png" alt="Active star">
-                                <img src="img/interface_star_active.png" alt="Active star">
-                                <img src="img/interface_star_active.png" alt="Active star">
-                                <img src="img/interface_star_active.png" alt="Active star">
-                                <img src="img/interface_star_nonactive.png" alt="Nonactive star">
-                            </div>
-                            <img src="img/body_second_left-image.png" alt="">
-                        </div>
-                        <div>
-                            <div>
-                                <h2>Tasty pancakes</h2>
-                                <p>Season favourite</p>
-                            </div>
-                            <div>
-                                <p>Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus.</p>
-                            </div>
-                            <div>
-                                <div>
-                                    <img src="img/interface_arrow_left_active.png" alt="">
+                    <div class="wrap_medium">
+                        <div class="main__folder-2__contant-folder">
+                            <div class="main__folder-2__contant-folder__left-column">
+                                <img src="img/body_second_left-image.png" alt="" class="main__folder-2__contant-folder__left-column__image">
+                                <div class="main__folder-2__contant-folder__left-column__stars">
+                                    <img src="img/interface_star_active.png" alt="Active star">
+                                    <img src="img/interface_star_active.png" alt="Active star">
+                                    <img src="img/interface_star_active.png" alt="Active star">
+                                    <img src="img/interface_star_active.png" alt="Active star">
+                                    <img src="img/interface_star_nonactive.png" alt="Nonactive star">
                                 </div>
-                                <div>
-                                    <img src="img/body_second_image_1.png" alt="">
-                                    <img src="img/body_second_image_2.png" alt="">
-                                    <img src="img/body_second_image_3.png" alt="">
-                                </div>
-                                <div>
-                                    <img src="img/interface_arrow_right_nonactive.png" alt="">
+                            </div>
+                            <div class="page__color_white">
+                                <div class="wrap_small">
+                                    <div class="main__folder-2__contant-folder__right-column ">
+                                        <div class="main__folder-2__contant-folder__right-column__head-container">
+                                            <h2 class="headline__head">Tasty pancakes</h2>
+                                            <p class="headline__signature">Season favourite</p>
+                                        </div>
+                                        <div class="main__folder-2__contant-folder__right-column__contant">
+                                            <p class="text_small">Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus.</p>
+                                        </div>
+                                        <div class="main__folder-2__contant-folder__right-column__images">
+                                            <div class="main__folder-2__contant-folder__right-column__images__arrow">
+                                                <img src="img/interface_arrow_left_active.png" alt="">
+                                            </div>
+                                            <div>
+                                                <img src="img/body_second_image_1.png" alt="">
+                                                <img src="img/body_second_image_2.png" alt="">
+                                                <img src="img/body_second_image_3.png" alt="">
+                                            </div>
+                                            <div class="main__folder-2__contant-folder__right-column__images__arrow">
+                                                <img src="img/interface_arrow_right_nonactive.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div>
+                    <div class="time_square main__folder-2-time">
                         <p>Ready in</p>
                         <p>40</p>
                         <p>mins</p>
@@ -126,91 +152,109 @@
             </div>
         </div>
         
-        <div class="page page-small">
+        <div class="page__background-3 page-small">
             <div class="wrap-page">
                 <div class="main__folder-3">
-                    <div class="main__folder-3__left-column">
-                        <div>
-                            <h2>Breakfast</h2>
-                            <p>7am Breakfast? we’re open!</p>
-                        </div>
-                        <div>
-                            <p>Full breakfast</p>
-                            <p>Duis ut tortor, et risus, vulputate pretium</p>
-                            <p>$12.49</p>
-                        </div>
-                        <div>
-                            <p>Toast & Jam</p>
-                            <p>Suspendisse, tempus, nterdum</p>
-                            <p>$4.90</p>
-                        </div>
-                        <div>
-                            <p>Muffins</p>
-                            <p>Fusce eget dui sodales est</p>
-                            <p>$3.95</p>
+                    <div class="wrap_big">
+                        <div class="main__folder-3__left-column">
+                            <div>
+                                <h2 class="headline__head_big">Breakfast</h2>
+                                <p class="headline__signature_big">7am Breakfast? we’re open!</p>
+                            </div>
+                            <div class="main__folder-3__left-column__text">
+                                <h3 class="main__folder-3__left-column__text__head">Full breakfast</h3>
+                                <p class="main__folder-3__left-column__text__signature">Duis ut tortor, et risus, vulputate pretium</p>
+                                <p class="main__folder-3__left-column__text__price">$12.49</p>
+                            </div>
+                            <div>
+                                <h3 class="main__folder-3__left-column__text__head">Toast & Jam</h3>
+                                <p class="main__folder-3__left-column__text__signature">Suspendisse, tempus, nterdum</p>
+                                <p class="main__folder-3__left-column__text__price">$4.90</p>
+                            </div>
+                            <div>
+                                <h3 class="main__folder-3__left-column__text__head">Muffins</h3>
+                                <p class="main__folder-3__left-column__text__signature">Fusce eget dui sodales est</p>
+                                <p class="main__folder-3__left-column__text__price">$3.95</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="main__folder-3__right-column">
-                        <div>
-                            <p>EST.</p>
-                            <p>1893</p>
-                        </div>
-                        <img src="img/body_third_right-column_head_line.png" alt="">
-                        <div>
-                            <h2>Your morning Escape with Flair</h2>
-                            <p>Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo.</p>
-                            <button>Read</button>
-                        </div>
+                    
+                        <div class="page__color_white border__outline">
+                            <div class="main__folder-3__right-column">
+                                <div class="wrap_giant">
+                                    <div class="main__folder-3__right-column__tip">
+                                        <div>
+                                            <p>EST.</p>
+                                        </div>
+                                        <div>
+                                            <p>1893</p>                                
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="main__folder-3__right-column__line-tip">
+                                    <img src="img/body_third_right-column_head_line.png" alt="">
+                                </div>
+                                <div class="wrap_medium">
+                                    <div class="main__folder-3__right-column__text">
+                                        <h2 class="main__folder-3__right-column__text__head">Your morning Escape with Flair</h2>
+                                        <p class="text_small">Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo.</p>
+                                        <button>Read</button>
+                                    </div>
+                                </div>
+                            </div>
+                        
                     </div>
                 </div>
             </div>
         </div>
-        <div class="page page-big">
+        <div class="page__color_white page-big">
             <div class="wrap-page">
                 <div class="main__folder-4">
                     <div class="main__folder-4__head">
-                        <h2>The Jibarito sandwich</h2>
-                        <p>The best sandwich you’ve ever tasted!</p>
+                        <h2 class="headline__head">The Jibarito sandwich</h2>
+                        <p class="headline__signature">The best sandwich you’ve ever tasted!</p>
                     </div>
-                    <div class="main__folder-4__left-column">
-                        <div>
-                            <img src="img/body_fourth_left-column_image-1.png" alt="">
-                            <h3>Class aptent</h3>
-                            <p>Quot alienum persecuti ut eam, nam ad atqui primis nusquam.</p>
-                        </div>
-                        <div>
-                            <img src="img/body_fourth_left-column_image-2.png" alt="">
-                            <h3>Nulla eget</h3>
-                            <p>Nullam dictum felis eu pede mollis pretium Integer tincidunt.</p>
-                        </div>
-                        <div>
-                            <img src="img/body_fourth_left-column_image-3.png" alt="">
-                            <h3>Sed nibh purus</h3>
-                            <p>Aenean eleifend tellus leo ligula, porttitor eu, consequat vitae.</p>
-                        </div>
-                    </div>
-                    <div class="main__folder-4__right-column">
-                        <div>
-                            <img src="img/body_fourth_right-column_the-jibarito-sandwish.png" alt="">
-                        </div>
-                        <div>
-                            <button>Full recipe</button>
-                        </div>
-                        <div>
+                    <div class="main__folder-4__contant">
+                        <div class="main__folder-4__contant__left-column">
                             <div>
-                                <p>Prep</p>
-                                <p>15</p>
-                                <p>mins</p>
+                                <img src="img/body_fourth_left-column_image-1.png" alt="">
+                                <h3 class="headline__head_small">Class aptent</h3>
+                                <p class="text_small">Quot alienum persecuti ut eam, nam ad atqui primis nusquam.</p>
                             </div>
                             <div>
-                                <p>Cook</p>
-                                <p>35</p>
-                                <p>mins</p>
+                                <img src="img/body_fourth_left-column_image-2.png" alt="">
+                                <h3 class="headline__head_small">Nulla eget</h3>
+                                <p class="text_small">Nullam dictum felis eu pede mollis pretium Integer tincidunt.</p>
                             </div>
                             <div>
-                                <p>Ready in</p>
-                                <p>50</p>
-                                <p>mins</p>
+                                <img src="img/body_fourth_left-column_image-3.png" alt="">
+                                <h3 class="headline__head_small">Sed nibh purus</h3>
+                                <p class="text_small">Aenean eleifend tellus leo ligula, porttitor eu, consequat vitae.</p>
+                            </div>
+                        </div>
+                        <div class="main__folder-4__contant__right-column">
+                            <div>
+                                <img class="border" src="img/body_fourth_right-column_the-jibarito-sandwish.png" alt="">
+                            </div>
+                            <div class="main__folder-4__contant__right-column__full-recipe">
+                                <button>Full recipe</button>
+                            </div>
+                            <div class="main__folder-4__contant__right-column__time">
+                                <div class="time_square">
+                                    <p>Prep</p>
+                                    <p>15</p>
+                                    <p>mins</p>
+                                </div>
+                                <div class="time_square">
+                                    <p>Cook</p>
+                                    <p>35</p>
+                                    <p>mins</p>
+                                </div>
+                                <div class="time_square">
+                                    <p>Ready in</p>
+                                    <p>50</p>
+                                    <p>mins</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -218,23 +262,33 @@
             </div>
         </div>
         
-        <div class="page page-tiny">
+        <div class="page__color_white page-tiny">
             <div class="wrap-page">
                 <footer class="footer">
-                    <nav>
-                        <ul>
-                            <li><a href="#">Our menu</a></li>
-                            <li><a href="#">Gallery</a></li>
-                            <li><a href="#">Culture</a></li>
+                    <nav class="footer__menu">
+                        <hr>
+                        <ul class="footer__menu__list">
+                            <li class="footer__menu__list__item"><a href="#">Our menu</a></li>
+                            <li class="footer__menu__list__item">~</li>
+                            <li class="footer__menu__list__item"><a href="#">Gallery</a></li>
+                            <li class="footer__menu__list__item">~</li>
+                            <li class="footer__menu__list__item"><a href="#">Culture</a></li>
                         </ul>
+                        <hr>
                     </nav>
-                    <img src="img/footer_Gustoso.png" alt="">
-                    <nav>
-                        <ul>
-                            <li><a href="#">Events</a></li>
-                            <li><a href="#">Catering</a></li>
-                            <li><a href="#">Visit us</a></li>
+                    <div class="footer__logo">
+                        <img src="img/footer_Gustoso.png" alt="">
+                    </div>
+                    <nav class="footer__menu">
+                        <hr>
+                        <ul class="footer__menu__list">
+                            <li class="footer__menu__list__item"><a href="#">Events</a></li>
+                            <li class="footer__menu__list__item">~</li>
+                            <li class="footer__menu__list__item"><a href="#">Catering</a></li>
+                            <li class="footer__menu__list__item">~</li>
+                            <li class="footer__menu__list__item"><a href="#">Visit us</a></li>
                         </ul>
+                        <hr>
                     </nav>
                 </footer>
             </div>
