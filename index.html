@@ -10,12 +10,11 @@
     <title>Bread</title>
 </head>
 <!--
-    Хлеб между после главного холдера
-    Позиция центральной картинки в первом фолдоре
-    Позиция во втором фолдоре
-    "Меню" между картинкой и текстом во втором фолодре
+    Закладки для картинок
+    Тени для закладок
+    Задние страницы в 3 фолдоре
 -->
-<body> <!--70~900, 760, 760, 760, 940, 220--> <!--180, 12*85 + 20*11 = 1240, 180--> <!--85*6 + 20*5 = 610--> 
+<body>
     <div class="page__background-1 page-medium">
         <div class="page__color_black page-extrasmall">
             <div class="wrap-page">
@@ -61,10 +60,10 @@
         <div class="head__bread">
             <img src="img/head_bottom-image.png" alt="">  
         </div>
-        <div class="head__white-circle"></div>
+        <div class="head__white-circle circle bg_color_white"></div>
     </div>  
     <div class="main">
-        <div class="page__background-2 page-small"> <!--48% 48%-->
+        <div class="page__background-2 page-small">
             <div class="wrap-page">
                 <div class="main__folder-1">
                     <div class="main__folder-1__left-column">
@@ -116,51 +115,55 @@
         <div class="page__background-3 page-small">
             <div class="wrap-page">
                 <div class="main__folder-2">
-                    <div class="wrap_medium">
-                        <div class="main__folder-2__contant-folder"> 
-                            <div class="main__folder-2__contant-folder__left-column">
-                                <img src="img/body_second_left-image.png" alt="" class="main__folder-2__contant-folder__left-column__image">
-                                <div class="main__folder-2__contant-folder__left-column__stars">
-                                    <img class="main__folder-2__contant-folder__left-column__stars__image" src="img/interface_star_active.png" alt="Active star">
-                                    <img class="main__folder-2__contant-folder__left-column__stars__image" src="img/interface_star_active.png" alt="Active star">
-                                    <img class="main__folder-2__contant-folder__left-column__stars__image" src="img/interface_star_active.png" alt="Active star">
-                                    <img class="main__folder-2__contant-folder__left-column__stars__image" src="img/interface_star_active.png" alt="Active star">
-                                    <img class="main__folder-2__contant-folder__left-column__stars__image" src="img/interface_star_nonactive.png" alt="Nonactive star">
-                                </div>
+                    <div class="main__folder-2__content-folder"> 
+                        <div class="main__folder-2__content-folder__left-column">
+                            <img src="img/body_second_left-image.png" alt="" class="main__folder-2__content-folder__left-column__image">
+                            <div class="main__folder-2__content-folder__left-column__stars">
+                                <img class="main__folder-2__content-folder__left-column__stars__image" src="img/interface_star_active.png" alt="Active star">
+                                <img class="main__folder-2__content-folder__left-column__stars__image" src="img/interface_star_active.png" alt="Active star">
+                                <img class="main__folder-2__content-folder__left-column__stars__image" src="img/interface_star_active.png" alt="Active star">
+                                <img class="main__folder-2__content-folder__left-column__stars__image" src="img/interface_star_active.png" alt="Active star">
+                                <img class="main__folder-2__content-folder__left-column__stars__image" src="img/interface_star_nonactive.png" alt="Nonactive star">
                             </div>
-                            <div class="page__background-5 main__folder-2__contant-folder__right-column__size">
-                                <div class="wrap_small">
-                                    <div class="main__folder-2__contant-folder__right-column">
-                                        <div class="main__folder-2__contant-folder__right-column__head-container">
-                                            <h2 class="headline__head">Tasty pancakes</h2>
-                                            <p class="headline__signature">Season favourite</p>
+                            <!-- <div class="main__folder-2__content-folder__left-column__folded"></div>-->
+                        </div>
+                        
+                        <div class="page__background-5 main__folder-2__content-folder__right-column__size">
+                            <div class="wrap_small main__folder-2__content-folder__right-column__wrap">
+                                <div class="main__folder-2__content-folder__right-column">
+                                    <div class="main__folder-2__content-folder__right-column__head-container">
+                                        <h2 class="headline__head">Tasty pancakes</h2>
+                                        <p class="headline__signature">Season favourite</p>
+                                    </div>
+                                    <div class="main__folder-2__content-folder__right-column__content">
+                                        <p class="text_small">Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus.</p>
+                                    </div>
+                                    <div class="main__folder-2__content-folder__right-column__slider">
+                                        <div class="main__folder-2__content-folder__right-column__slider__arrow">
+                                            <div class="main__folder-2__content-folder__right-column__slider__arrow__image_left"></div>
                                         </div>
-                                        <div class="main__folder-2__contant-folder__right-column__contant">
-                                            <p class="text_small">Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus.</p>
+                                        <div class="main__folder-2__content-folder__right-column__slider__images-block">
+                                            <img class="main__folder-2__content-folder__right-column__slider__images-block__image" src="img/body_second_image_1.png" alt="">
+                                            <img class="main__folder-2__content-folder__right-column__slider__images-block__image" src="img/body_second_image_2.png" alt="">
+                                            <img class="main__folder-2__content-folder__right-column__slider__images-block__image" src="img/body_second_image_3.png" alt="">
                                         </div>
-                                        <div class="main__folder-2__contant-folder__right-column__slider">
-                                            <div class="main__folder-2__contant-folder__right-column__slider__arrow">
-                                                <img src="img/interface_arrow_left_active.png" alt="">
-                                            </div>
-                                            <div class="main__folder-2__contant-folder__right-column__slider__images-block">
-                                                <img class="main__folder-2__contant-folder__right-column__slider__images-block__image" src="img/body_second_image_1.png" alt="">
-                                                <img class="main__folder-2__contant-folder__right-column__slider__images-block__image" src="img/body_second_image_2.png" alt="">
-                                                <img class="main__folder-2__contant-folder__right-column__slider__images-block__image" src="img/body_second_image_3.png" alt="">
-                                            </div>
-                                            <div class="main__folder-2__contant-folder__right-column__slider__arrow">
-                                                <img src="img/interface_arrow_right_nonactive.png" alt="">
-                                            </div>
+                                        <div class="main__folder-2__content-folder__right-column__slider__arrow">
+                                            <div class="main__folder-2__content-folder__right-column__slider__arrow__image_right"></div>
                                         </div>
                                     </div>
-                                </div>
+                                    <div class="main__folder-2__content-folder__right-column__drag-menu__circle circle bg_color_white"></div>
+                                    <div class="main__folder-2__content-folder__right-column__drag-menu__menu"></div>
+                                </div>  
                             </div>
                         </div>
+                        
+                        <div class="main__folder-2-time time_square_ready shadow">
+                            <p>Ready in</p>
+                            <p>40</p>
+                            <p>mins</p>
+                        </div>
                     </div>
-                    <div class="time_square_ready main__folder-2-time">
-                        <p>Ready in</p>
-                        <p>40</p>
-                        <p>mins</p>
-                    </div>
+                        
                 </div>
             </div>
         </div>
@@ -213,8 +216,13 @@
                                     <div class="button button_transparent"><p>Read</p></div>
                                 </div>
                             </div>
+                            <!--
+                            <div class="page__background-8 border__outline main__folder-3__right-column__back-1__wrap"></div>
+                            <div class="page__background-8 border__outline main__folder-3__right-column__back-2__wrap"></div>-->
                         </div>
+                        
                     </div>
+                    
                 </div>
             </div>
         </div>
@@ -226,33 +234,33 @@
                         <h2 class="headline__head main__folder-4__head__headline">The Jibarito sandwich</h2>
                         <p class="headline__signature">The best sandwich you’ve ever tasted!</p>
                     </div>
-                    <div class="main__folder-4__contant">
-                        <div class="main__folder-4__contant__left-column">
-                            <div class="main__folder-4__contant__left-column__text-container">
+                    <div class="main__folder-4__content">
+                        <div class="main__folder-4__content__left-column">
+                            <div class="main__folder-4__content__left-column__text-container">
                                 <img src="img/body_fourth_left-column_image-1.png" alt="">
                                 <h3 class="headline__head_small">Class aptent</h3>
                                 <p class="text_small">Quot alienum persecuti ut eam, nam ad atqui primis nusquam.</p>
                             </div>
-                            <div class="main__folder-4__contant__left-column__text-container">
+                            <div class="main__folder-4__content__left-column__text-container">
                                 <img src="img/body_fourth_left-column_image-2.png" alt="">
                                 <h3 class="headline__head_small">Nulla eget</h3>
                                 <p class="text_small">Nullam dictum felis eu pede mollis pretium Integer tincidunt.</p>
                             </div>
-                            <div class="main__folder-4__contant__left-column__text-container">
+                            <div class="main__folder-4__content__left-column__text-container">
                                 <img src="img/body_fourth_left-column_image-3.png" alt="">
                                 <h3 class="headline__head_small">Sed nibh purus</h3>
                                 <p class="text_small">Aenean eleifend tellus leo ligula, porttitor eu, consequat vitae.</p>
                             </div>
                         </div>
                         <div class="column"> 
-                            <div class="main__folder-4__contant__right-column">
-                                <div class="main__folder-4__contant__right-column__main-image">
+                            <div class="main__folder-4__content__right-column">
+                                <div class="main__folder-4__content__right-column__main-image">
                                     <img class="border" src="img/body_fourth_right-column_the-jibarito-sandwish.png" alt="">
-                                    <div class="main__folder-4__contant__right-column__full-recipe">
+                                    <div class="main__folder-4__content__right-column__full-recipe">
                                             <div class="button button_white"><p>Full recipe</p></div>
                                     </div>
                                 </div>
-                                <div class="main__folder-4__contant__right-column__time">
+                                <div class="main__folder-4__content__right-column__time">
                                     <div class="time_square">
                                         <p>Prep</p>
                                         <p>15</p>
