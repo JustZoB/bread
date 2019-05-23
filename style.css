@@ -46,9 +46,15 @@
 .page__background-8 {
     background: url(img/body_third_right-column_right-bottom-back.png) no-repeat right bottom #e5e3d9;
 }
-.column {
+.col {
     height: 760px;
     display: flex;
+}
+.margin__small {
+    margin: 5px;
+}
+.margin__top-bottom_tiny {
+    margin: 3px 0;
 }
 
 .page__color_white {
@@ -240,6 +246,9 @@ h2, h3 {
     
     border-radius: 50%;
 }
+.menu__list__item {
+    margin: 0 10px;
+}
 
 /*__________Head-folder__________*/
 .head-folder__nav {
@@ -275,9 +284,7 @@ h2, h3 {
     color: rgb(221, 212, 212);;
 }
 
-.head-folder__nav__menu__list__item {
-    margin: 0 10px;
-}
+
 .head-folder__main {
     margin-top: 200px;
     text-align: center;
@@ -296,7 +303,7 @@ h2, h3 {
     letter-spacing: 2.4px;
     line-height: 36px;
 }
-.head-folder__nav__social__icon {
+.social__icon {
     margin: 0 15px;
     cursor: pointer;
 }
@@ -324,68 +331,69 @@ h2, h3 {
     justify-content: space-evenly;
     height: 760px;
 }
-.main__folder-1__left-column {
+.main__folder-1__left-col {
     margin: auto 0;
     text-align: center;
     width: 500px;
 }
-.main__folder-1__left-column__head-container {
+.main__folder-1__left-col__head-container {
     margin-bottom: 70px;
 }
-.main__folder-1__left-column__text {
+.main__folder-1__left-col__text {
     color: #56534c;
     letter-spacing: 1.4px;
 }
-.main__folder-1__left-column__chef-head {
+.main__folder-1__left-col__chef-head {
     color: #56534c;
     font-size: 24px;
     line-height: 30px;
     letter-spacing: 0.6px;
     margin: 50px 0;
 }
-.main__folder-1__left-column__chef-name {
+.main__folder-1__left-col__chef-name {
     display: flex;
     justify-content: center;
 } 
-.main__folder-1__left-column__chef-name hr{
+.main__folder-1__left-col__chef-name hr{
     color: #d7d5ca;
 }
 
-.main__folder-1__left-column__chef-name div{
+.main__folder-1__left-col__chef-name div{
     margin: 0 15px;
 }
-.main__folder-1__left-column__chef-name__text {
+.main__folder-1__left-col__chef-name__text {
     font-size: 24px;
     letter-spacing: 0.6px;
     color: #56534c;
     line-height: 30px;
     padding: 0 20px;
 }
-.main__folder-1__left-column__chef-quote {
+
+.chef-quote {
     margin: 25px auto 0 auto;
     position: relative;
     width: 400px;
     height: 100px;
 }
-.main__folder-1__left-column__chef-quote__left-quote-mark {
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-.main__folder-1__left-column__chef-quote__quote {
+.chef-quote__quote {
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
     
 }
-.main__folder-1__left-column__chef-quote__right-quote-mark {
+.chef-quote__quote-mark_l {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.chef-quote__quote-mark_r {
     position: absolute;
     bottom: 0;
     right: 0;
 }
 
-.main__folder-1__right-column {
+.main__folder-1__right-col {
     display: table-cell;
     vertical-align: middle;  
     position: relative;
@@ -393,15 +401,12 @@ h2, h3 {
     width: 620px;
     
 }
-.main__folder-1__right-column__image {
-    margin: 5px;
-}
-.main__folder-1__right-column__center-image {
+.center-image {
     position: absolute;
     width: 610px;
     height: 520px;
 }
-.main__folder-1__right-column__center-image__image {
+.center-image__image {
     margin: auto;
     width: 275px;
     height: 275px;
@@ -413,7 +418,7 @@ h2, h3 {
     opacity: 0.9;
 
 }
-.main__folder-1__right-column__center-image__text {
+.center-image__text {
     z-index: 10;
     position: absolute;
     max-width: 160px;
@@ -444,16 +449,16 @@ h2, h3 {
     height: 512px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.54);
 }
-.main__folder-2__content-folder__left-column {
+.main__folder-2__content-folder__left-col {
     position: absolute;
     width: 585px;
     height: 512px;
 }
-.main__folder-2__content-folder__left-column__image {
+.main__folder-2__content-folder__left-col__image {
     width: 585px;
     height: 512px;
 }
-.main__folder-2__content-folder__left-column__stars {
+.main__folder-2__content-folder__left-col__stars {
     position: absolute;
     left: 20px;
     top: 50%;
@@ -462,55 +467,55 @@ h2, h3 {
     flex-direction: column;
     z-index: 10;
 }
-.main__folder-2__content-folder__left-column__stars__image {
+.main__folder-2__content-folder__left-col__stars__image {
     margin: 3px 0;
 }
 
-.main__folder-2__content-folder__right-column__head-container {
+.main__folder-2__content-folder__right-col__head-container {
     margin-top: 80px;
 }
-.main__folder-2__content-folder__right-column__content {
+.main__folder-2__content-folder__right-col__content {
     margin: 70px 0 100px 0;
 }
-.main__folder-2__content-folder__right-column__size {
+.main__folder-2__content-folder__right-col__size {
     width: 560px;
     height: 512px;
     position: absolute;
     right: 0;
     z-index: 5;
 }
-.main__folder-2__content-folder__right-column__wrap {
+.main__folder-2__content-folder__right-col__wrap {
     margin-left: 60px;
 }
-.main__folder-2__content-folder__right-column__slider {
+.main__folder-2__content-folder__right-col__slider {
     display: flex;
     justify-content: center;
 }
-.main__folder-2__content-folder__right-column__slider__arrow {
+.slider__arrow {
     cursor: pointer;
     display: flex;
     align-items: center;
 }
-.main__folder-2__content-folder__right-column__slider__arrow__image_left {
+.slider__arrow__img_l {
     width: 32px;
     height: 32px;
     background: url(img/interface_arrow_left_nonactive.png) no-repeat;
 }
-.main__folder-2__content-folder__right-column__slider__arrow__image_left:hover {
+.slider__arrow__img_l:hover {
     background: url(img/interface_arrow_left_active.png) no-repeat;
 }
-.main__folder-2__content-folder__right-column__slider__arrow__image_right {
+.slider__arrow__img_r {
     width: 32px;
     height: 32px;
     background: url(img/interface_arrow_right_nonactive.png) no-repeat;
 }
-.main__folder-2__content-folder__right-column__slider__arrow__image_right:hover {
+.slider__arrow__img_r:hover {
     background: url(img/interface_arrow_right_active.png) no-repeat;
 }
-.main__folder-2__content-folder__right-column__slider__images-block__image {
+.slider__imgs-block__img {
     margin: 0 15px;
 }
-.main__folder-2__content-folder__right-column__drag-menu__circle {
+.drag-menu__circle {
     cursor: pointer;
     position: absolute;
     width: 50px;
@@ -520,7 +525,7 @@ h2, h3 {
     transform: translate(-50%, -50%);
     z-index: 9;
 }
-.main__folder-2__content-folder__right-column__drag-menu__menu {
+.drag-menu__menu {
     cursor: pointer;
     position: absolute;
     left: -1px;
@@ -547,24 +552,24 @@ h2, h3 {
     height: 760px;
 }
 
-.main__folder-3__left-column {
+.main__folder-3__left-col {
     text-align: center;
     
 }
-.main__folder-3__left-column__wrap {
+.main__folder-3__left-col__wrap {
     margin: auto 0;
 }
-.main__folder-3__left-column__text {
+.breakfast__text {
     margin-top: 50px;
 }
-.main__folder-3__left-column__text__head {
+.breakfast__text__head {
     color: white;
     font-size: 30px;
     letter-spacing: 1.5px;
     margin: 5px 0;
     
 }
-.main__folder-3__left-column__text__signature {
+.breakfast__text__signature {
     font-family: 'Proxima Nova', serif;
     color: #a47d5e;
     font-size: 16px;
@@ -572,19 +577,19 @@ h2, h3 {
     margin: 0;
     
 }
-.main__folder-3__right-column {
+.main__folder-3__right-col {
     position: relative;
     margin: auto 0;
     width: 440px;
     height: 600px;
 }
-.main__folder-3__left-column__text__price {
+.breakfast__text__price {
     color: #dfc691;
     font-size: 36px;
     letter-spacing: 1.8px;
     margin: 25px 0;
 }
-.main__folder-3__right-column__wrap {
+.main__folder-3__right-col__wrap {
     position: absolute;
     width: 440px;
     height: 600px;
@@ -592,7 +597,7 @@ h2, h3 {
     z-index: 5;
 }
 
-.main__folder-3__right-column__back-1__wrap {
+.main__folder-3__right-col__back-1 {
     position: absolute;
     width: 400px;
     height: 550px;
@@ -602,7 +607,7 @@ h2, h3 {
     transform: translate(0, -50%);
     z-index: 4;  
 }
-.main__folder-3__right-column__back-2__wrap {
+.main__folder-3__right-col__back-2 {
     position: absolute;
     width: 360px;
     height: 500px;
@@ -613,31 +618,31 @@ h2, h3 {
     z-index: 3;  
 }
 
-.main__folder-3__right-column__tip {
+.main__folder-3__right-col__tip {
     display: flex;
     justify-content: space-between;
     margin-top: 40px;
 }
-.main__folder-3__right-column__tip__text {
+.main__folder-3__right-col__tip__text {
     color: #56534c;
     font-weight: bold;
     letter-spacing: 0.7px;
 }
-.main__folder-3__right-column__line-tip {
+.main__folder-3__right-col__line-tip {
     display: flex;
     justify-content: center;
 }
-.main__folder-3__right-column__text-container {
+.main__folder-3__right-col__text-container {
     margin-top: 40px;
     text-align: center;
 }
-.main__folder-3__right-column__text-container__head {
+.main__folder-3__right-col__text-container__head {
     color: #56534c;
     font-size: 38px;
     letter-spacing: 1.1px;
     line-height: 60px;
 }
-.main__folder-3__right-column__text-container__text {
+.main__folder-3__right-col__text-container__text {
     line-height: 30px;
     letter-spacing: 0.7px;
     margin: 50px 0;
@@ -658,33 +663,33 @@ h2, h3 {
     justify-content: center;
     flex-basis: 25%;
 }
-.main__folder-4__content__left-column {
+.main__folder-4__content__left-col {
     width: 300px;
     text-align: center;
 }
-.main__folder-4__content__left-column__text-container {
+.main__folder-4__content__left-col__text-container {
     margin-bottom: 30px;
 }
-.main__folder-4__content__left-column__text-container img, 
-.main__folder-4__content__left-column__text-container .headline__head_small,
-.main__folder-4__content__left-column__text-container .text_small {
+.main__folder-4__content__left-col__text-container img, 
+.main__folder-4__content__left-col__text-container .headline__head_small,
+.main__folder-4__content__left-col__text-container .text_small {
     margin: 12px 0;
 }
 
-.main__folder-4__content__right-column {
+.main__folder-4__content__right-col {
     position: relative;
     display: flex;
     align-items: center;
 }
-.main__folder-4__content__right-column__main-image {
+.main__folder-4__content__right-col__main-image {
     position: relative;
 }
-.main__folder-4__content__right-column__full-recipe {
+.main__folder-4__content__right-col__full-recipe {
     position: absolute;
     bottom: -18px;
     left: -20px;
 }
-.main__folder-4__content__right-column__time {
+.main__folder-4__content__right-col__time {
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -717,9 +722,6 @@ h2, h3 {
     line-height: 30px;
     letter-spacing: 4.2px;
     padding: 0;
-}
-.footer__menu__list__item {
-    margin: 0 10px;
 }
 .footer__menu__list a {
     color: #56534c;
