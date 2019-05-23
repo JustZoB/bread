@@ -655,7 +655,8 @@ h2, h3 {
 }
 .main__folder-4__content {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-basis: 25%;
 }
 .main__folder-4__content__left-column {
     width: 300px;
