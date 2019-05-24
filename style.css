@@ -51,6 +51,13 @@
         background-size: unset;
     }
 }
+@media (max-width: 1150px) {
+    .page__background-2 {
+        background: url(img/body_first_background.png);
+        background-position-x: center;
+    }
+}
+
 .col {
     height: 760px;
     display: flex;
@@ -83,6 +90,11 @@
 }
 .wrap_small {
     margin: 0 5%;
+}
+@media (max-width: 1150px) {
+    .wrap-page {
+        margin: 0;
+    }
 }
 
 a:hover, button {
@@ -186,6 +198,8 @@ h2, h3 {
     font-family: 'Proxima Nova', serif;
     color: #56534c;
     letter-spacing: 1.4px;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 .border {
     border: 10px solid #ffffff;
@@ -315,6 +329,11 @@ h2, h3 {
     letter-spacing: 6.9px;
     margin: 0 0 55px 0;
 }
+@media (max-width: 500px) {
+    .head-folder__main__head {
+        font-size: 60px;
+    }
+}
 .head-folder__main__text {
     max-width: 550px;
     margin: 65px auto;
@@ -350,10 +369,11 @@ h2, h3 {
     justify-content: space-evenly;
     padding: 90px 0;
 }
+
 .main__folder-1__left-col {
-    margin: auto 0;
+    margin: auto 20px;
     text-align: center;
-    width: 500px;
+    max-width: 500px;
 }
 .main__folder-1__left-col__head-container {
     margin-bottom: 70px;
@@ -373,6 +393,7 @@ h2, h3 {
     display: flex;
     justify-content: center;
 } 
+
 .main__folder-1__left-col__chef-name hr{
     color: #d7d5ca;
 }
@@ -387,11 +408,13 @@ h2, h3 {
     line-height: 30px;
     padding: 0 20px;
 }
-
+.chef-quote__wrap {
+    margin: 25px 20px 0 20px;
+}
 .chef-quote {
-    margin: 25px auto 0 auto;
+    margin: 0 auto;
     position: relative;
-    width: 400px;
+    max-width: 400px;
     height: 100px;
 }
 .chef-quote__quote {
@@ -412,13 +435,26 @@ h2, h3 {
     right: 0;
 }
 
+@media (max-width: 430px) {
+    .main__folder-1__left-col__chef-name {
+        flex-direction: column;
+    } 
+    .main__folder-1__left-col__chef-name div{
+        margin: 0 auto;
+        max-width: 130px;
+    }
+    .chef-quote {
+        
+    }
+}
+
 .main__folder-1__right-col {
     display: table-cell;
     vertical-align: middle;  
     position: relative;
-    margin: auto 0;
+    margin: auto 20px;
+    min-width: 620px;
     width: 620px;
-    
 }
 .center-image {
     position: absolute;
@@ -451,6 +487,20 @@ h2, h3 {
     color: #c9b176;
     letter-spacing: 1.5px;
     text-transform: uppercase;
+}
+
+@media (max-width: 1150px) {
+    .main__folder-1{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .main__folder-1__left-col {
+        margin: 10px auto;
+        
+    }
+    .main__folder-1__right-col {
+        margin: 10px auto;
+    }
 }
 
 /*__________Folder-2__________*/
