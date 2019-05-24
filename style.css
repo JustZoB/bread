@@ -8,10 +8,6 @@
 .page-small{
     height: 760px;
 }
-
-.page-big{
-    height: 920px;
-}
 .page__background-1 {
     background: url(img/head_background.png) no-repeat;
     background-size: 100%;
@@ -40,6 +36,12 @@
 }
 .page__background-8 {
     background: url(img/body_third_right-column_right-bottom-back.png) no-repeat right bottom #e5e3d9;
+}
+.page__background-9 {
+    background: url(img/body_third_right-column_right-bottom-back.png) no-repeat right bottom #d5d3cb;
+}
+.page__background-10 {
+    background: radial-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0));
 }
 
 @media (max-width: 1615px) {
