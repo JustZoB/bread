@@ -50,12 +50,13 @@
         background-position: center;
         background-size: unset;
     }
-}
-@media (max-width: 1150px) {
     .page__background-2 {
         background: url(img/body_first_background.png);
         background-position-x: center;
     }
+}
+@media (max-width: 1150px) {
+    
     .page__background-4 {
         background: url(img/body_third_background.png);
         background-position-x: center;
@@ -140,7 +141,7 @@ a:hover, button {
     width: 200px;
     height: 200px;
     text-align: center;
-    background: url(img/interface_ready-in_background.png) no-repeat rgba(255, 255, 255, 1);
+    background: url(img/interface_ready-in_background.png) no-repeat rgba(255, 255, 255, 1) center;
     margin: 1px 0;
     
 }
@@ -173,7 +174,7 @@ h2, h3 {
 .headline__head {
     color: #56534c;
     font-size: 48px;
-    margin: 0;
+    margin: 0 10px;
 }
 .headline__head_small {
     font-size: 30px;
@@ -202,7 +203,7 @@ h2, h3 {
     font-size: 16px;
     letter-spacing: 0.6px;
     font-weight: bold;
-    margin: 0;
+    margin: 0 10px;
 }
 .text_small {
     font-family: 'Proxima Nova', serif;
@@ -328,7 +329,7 @@ h2, h3 {
     text-align: center;
     color: white;
 }
-@media (max-width: 1615px) {
+@media (max-width: 1150px) {
     .head-folder__main {
         padding: 100px 0;
     }
@@ -551,6 +552,7 @@ h2, h3 {
 }
 .main__folder-2__content-folder {
     position: relative;
+    margin: 0 20px;
     width: 100%;
     max-width: 960px;
     height: 512px;
@@ -585,14 +587,14 @@ h2, h3 {
     margin: 70px 0 100px 0;
 }
 .main__folder-2__content-folder__right-col__size {
-    width: 560px;
+    width: 540px;
     height: 512px;
     position: absolute;
     right: 0;
     z-index: 5;
 }
 .main__folder-2__content-folder__right-col__wrap {
-    margin-left: 60px;
+    margin: 0 10px 0 40px;
 }
 .main__folder-2__content-folder__right-col__slider {
     display: flex;
@@ -650,6 +652,15 @@ h2, h3 {
     right: 0;
     top: 0;
     z-index: 10;
+}
+@media (max-width: 1150px) {
+    .main__folder-2-time {
+        transform: translate(0%, -20%);
+        right: 5px;
+    }
+    .main__folder-2__content-folder__right-col__wrap {
+        margin: 0 10px 0 20px;
+    }
 }
 
 /*__________Folder-3__________*/
@@ -797,7 +808,7 @@ h2, h3 {
     flex-direction: column;
 }
 .main__folder-4__head__headline {
-    margin-top: 100px;
+    margin: 100px 5px 0 5px;
 }
 .main__folder-4__content {
     display: flex;
