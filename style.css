@@ -2,23 +2,18 @@
     font-family: 'Proxima Nova';
     src: url('ProximaNova-Regular.ttf');
 }    
-.page-extrasmall {
+.page-tiny {
     height: 70px;
-}
-.page-tiny{
-    height: 220px;
 }
 .page-small{
     height: 760px;
 }
-.page-medium{
-    height: 900px;
-}
+
 .page-big{
     height: 920px;
 }
 .page__background-1 {
-    background: url(img/head_background.png) no-repeat ;
+    background: url(img/head_background.png) no-repeat;
     background-size: 100%;
     position: relative;
 }
@@ -45,6 +40,16 @@
 }
 .page__background-8 {
     background: url(img/body_third_right-column_right-bottom-back.png) no-repeat right bottom #e5e3d9;
+}
+
+@media (max-width: 1615px) {
+    .page__background-1,
+    .page__background-2, 
+    .page__background-3,
+    .page__background-4 {
+        background-position: center;
+        background-size: unset;
+    }
 }
 .col {
     height: 760px;
@@ -257,10 +262,18 @@ h2, h3 {
     color: white;
     height: 70px;
 }
+@media (max-width: 1615px) {
+    .head-folder__nav {
+        justify-content: center;
+    }
+}
 .head-folder__nav__logo,
 .head-folder__nav__menu,
 .head-folder__nav__social {
-    margin: auto 0;
+    margin: auto 10px;
+}
+.head-folder__nav__social {
+    min-width: 169px;
 }
 .head-folder__nav__menu__list {
     display: flex;
@@ -269,6 +282,7 @@ h2, h3 {
     font-family: 'Alegreya', serif;
     line-height: 24px;
     letter-spacing: 4.2px;
+    padding: 0;
 }
 .head-folder__nav__menu__list a{
     color: white;
@@ -286,19 +300,24 @@ h2, h3 {
 
 
 .head-folder__main {
-    margin-top: 200px;
+    padding: 200px 0;
     text-align: center;
     color: white;
+}
+@media (max-width: 1615px) {
+    .head-folder__main {
+        padding: 100px 0;
+    }
 }
 .head-folder__main__head {
     font-family: 'Playfair Display', serif;
     font-size: 92px;
     letter-spacing: 6.9px;
-    margin-bottom: 55px;
+    margin: 0 0 55px 0;
 }
 .head-folder__main__text {
     max-width: 550px;
-    margin: 70px auto;
+    margin: 65px auto;
     font-size: 24px;
     letter-spacing: 2.4px;
     line-height: 36px;
@@ -329,7 +348,7 @@ h2, h3 {
 .main__folder-1 {
     display: flex;
     justify-content: space-evenly;
-    height: 760px;
+    padding: 90px 0;
 }
 .main__folder-1__left-col {
     margin: auto 0;
@@ -440,7 +459,7 @@ h2, h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 760px;
+    padding: 130px 0 90px 0;
 }
 .main__folder-2__content-folder {
     position: relative;
@@ -549,7 +568,7 @@ h2, h3 {
 .main__folder-3 {
     display: flex;
     justify-content: space-evenly;
-    height: 760px;
+    padding: 65px 0;
 }
 
 .main__folder-3__left-col {
@@ -703,7 +722,7 @@ h2, h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 220px;
+    padding: 70px 0;
 }
 .footer__logo {
     margin: auto 20px;
