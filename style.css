@@ -294,8 +294,19 @@ h2, h3 {
 }
 .head-folder__nav__logo,
 .head-folder__nav__menu,
-.head-folder__nav__social {
+.head-folder__nav__social,
+.head-folder__nav__burger-menu {
     margin: auto 10px;
+}
+.head-folder__nav__burger-menu {
+    display: none;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+}
+.head-folder__nav__burger-menu__img {
+    width: 60px;
+    height: 60px;
 }
 .head-folder__nav__social {
     min-width: 169px;
@@ -330,15 +341,25 @@ h2, h3 {
     color: white;
 }
 @media (max-width: 1150px) {
+    .head-folder__nav__burger-menu {
+        display: block;
+        
+    }
     .head-folder__main {
         padding: 100px 0;
+    }
+    .head-folder__nav {
+        justify-content: space-around;
+    }
+    .head-folder__nav__menu {
+        display: none;
     }
 }
 .head-folder__main__head {
     font-family: 'Playfair Display', serif;
     font-size: 92px;
     letter-spacing: 6.9px;
-    margin: 0 0 55px 0;
+    margin: 0 10px 55px 10px;
 }
 @media (max-width: 500px) {
     .head-folder__main__head {
@@ -355,6 +376,21 @@ h2, h3 {
 .social__icon {
     margin: 0 15px;
     cursor: pointer;
+}
+@media (max-width: 450px) {
+    .head-folder__nav__social {
+        min-width: 110px;
+    }
+    .social__icon {
+        margin: 0 5px;
+        cursor: pointer;
+    }
+    .head-folder__nav__logo,
+    .head-folder__nav__menu,
+    .head-folder__nav__social,
+    .head-folder__nav__burger-menu {
+        margin: auto 5px;
+    }
 }
 .head__bread {
     position: absolute;
