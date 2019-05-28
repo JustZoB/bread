@@ -720,10 +720,12 @@ h2, h3 {
     position: relative;
     width: 360px;
     padding: 10px 40px;
+    margin: 0 auto;
 }
 .carousel__arrow {
     position: absolute;
-    top: 45px;
+    transform: translate(0, -50%);
+    top: 50%;
     padding: 0;
     display: block;
     cursor: pointer;
@@ -759,12 +761,10 @@ h2, h3 {
     list-style: none;
     transition: margin-left 250ms;
     font-size: 0;
-    margin-left: 0;
 }
 .carousel__imgs li {
     margin: 5px 15px;
-    display: inline-block;
-    
+    display: inline-block; 
 }
 .drag-menu__circle {
     cursor: pointer;
@@ -831,6 +831,13 @@ h2, h3 {
         height: unset;
         right: 0;
     }
+    .folder-2__right-col__carousel {
+        position: relative;
+        width: 120px;
+        height: 360px;
+        padding: 10px 40px;
+        margin: 0 auto;
+    }
     .folder-2__right-col {
         margin: 0 10px 0 10px;
         padding: 40px 0;
@@ -846,9 +853,21 @@ h2, h3 {
         right: 10px;
         top: -10px;
     }
+    .carousel__gallery {
+        width: 120px;
+        height: 360px;
+    }
     .carousel__imgs {
         display: flex;
         flex-direction: column;
+        height: 9999px;
+        width: 120px;
+        list-style: none;
+        transition: margin-top 250ms;
+    }
+    .carousel__imgs li {
+        margin: 15px;
+        display: unset; 
     }
 }
 

@@ -35,12 +35,28 @@ $(document).ready(function() {
     
 
     $('.prev').click (function() {
-        position = Math.min(position + width * count, 0);
-        list.css({'margin-left' : position + 'px'});
+        if ($(window).width() < 640) {
+            position = Math.min(position + width * count, 0);
+            list.css({'margin-top' : position + 'px'});
+        } 
+        else {
+            position = Math.min(position + width * count, 0);
+            list.css({'margin-left' : position + 'px'});
+        }
     });
 
     $('.next').click (function() {
-        position = Math.max(position - width * count, -width * (listElems.length - count));
-        list.css({'margin-left' : position + 'px'});
+        if ($(window).width() < 640) {
+            position = Math.max(position - width * count, -width * (listElems.length - count));
+            list.css({'margin-top' : position + 'px'});
+        } 
+        else {
+            position = Math.max(position - width * count, -width * (listElems.length - count));
+            list.css({'margin-left' : position + 'px'});
+        }
+    });
+    $(window).resize(function() {
+        list.css({'margin-top' : 0});
+        list.css({'margin-left' : 0});
     });
 });
