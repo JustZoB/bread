@@ -24,21 +24,23 @@ $(document).ready(function() {
         overlay.on("click", toggleMenu);
     }
     burgerMenu(".nav");
-    /*var width = 120; 
-    var count = 1; 
 
-    var list = $('#carousel');
-    var listElems = $('.carousel li');
+    
+    var width = 120; 
+    var count = 3; 
+
+    var list = $('.carousel__imgs');
+    var listElems = $('.carousel__imgs li');
     var position = 0;
-    list.style.marginLeft = 40 + "px";
+    
 
-    $('#prev').onclick = function() {
-        position = Math.min(position + width * count, 0)
-        list.style.marginLeft = position + 'px';
-    };
+    $('.prev').click (function() {
+        position = Math.min(position + width * count, 0);
+        list.css({'margin-left' : position + 'px'});
+    });
 
-    $('#next').onclick = function() {
+    $('.next').click (function() {
         position = Math.max(position - width * count, -width * (listElems.length - count));
-        list.style.marginLeft = position + 'px';
-    };*/
+        list.css({'margin-left' : position + 'px'});
+    });
 });
