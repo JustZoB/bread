@@ -1,8 +1,8 @@
 $(document).ready(function() {
     function burgerMenu(selector) {
         let menu = $(selector);
-        let button = $(".nav__burger-menu__button");
-        let button_close = $(".nav__burger-menu__close");
+        let button = $(".menu__icon");
+        let button_close = $(".menu__close__icon");
         let links = menu.find(".menu__list__item");
         let overlay = menu.find(".burger-menu__overlay");
 

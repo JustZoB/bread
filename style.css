@@ -319,16 +319,7 @@ h2, h3 {
 .nav__block {
     margin: auto 10px;
 }
-.nav__burger-menu__button {
-    display: none;
-    cursor: pointer;
-    width: 60px;
-    height: 60px;
-}
-.nav__burger-menu__img {
-    width: 60px;
-    height: 60px;
-}
+
 
 
 
@@ -382,7 +373,7 @@ h2, h3 {
     margin: 0 15px;
     cursor: pointer;
 }
-.nav__burger-menu__close {
+.menu__close__icon {
     display: none;
 }
 .head__bread {
@@ -405,6 +396,15 @@ h2, h3 {
 .burger-menu__overlay {
     display: none;
 }
+
+.menu__icon {
+    display: none;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+}
+
+
 @media (max-width: 1615px) {
     .nav {
         justify-content: center;
@@ -416,8 +416,15 @@ h2, h3 {
         margin: 0 10px;
         padding: 5px 0;
     }
-    .nav__burger-menu__button {
+    .menu__icon {
         display: block;
+        border-bottom: 20px double #a47d5e;
+        border-top: 7px solid #a47d5e;
+        cursor: pointer;
+        height: 7px;
+        transition: all 0.2s ease 0s;
+        margin: 15px 0;
+        width: 50px;
     }
     .header {
         padding: 100px 0;
@@ -479,20 +486,35 @@ h2, h3 {
         background-color: rgba(0, 0, 0, 0.5);
         display: block;
     }
-    .nav__burger-menu__close {
+    
+    .menu__close__icon {
         cursor: pointer;
-        width: 60px;
         height: 60px;
-        margin: 15px 0 0 25px;
+        margin: 10px 0 0 50px;
+        display: block;
+        opacity: 0.5;
+    }
+    .menu__close__icon:hover {
+        opacity: 1;
+    }
+    .menu__close__icon:before, .menu__close__icon:after {
+        position: absolute;
+        content: ' ';
+        height: 60px;
+        width: 5px;
+        background-color: #a47d5e;
+    }
+    .menu__close__icon:before {
+    transform: rotate(45deg);
+    }
+    .menu__close__icon:after {
+    transform: rotate(-45deg);
     }
     .nav__menu__list {
         margin: 0;
     }
     .nav__menu__list .menu__list__item {
         padding: 15px;
-    }
-    .nav__burger-menu__close {
-        display: block;
     }
     .burger-menu_active .nav__burger-menu {
         left: 0;
