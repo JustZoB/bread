@@ -1,0 +1,44 @@
+$(document).ready(function() {
+    function burgerMenu(selector) {
+        let menu = $(selector);
+        let button = $(".nav__burger-menu__button");
+        let button_close = $(".nav__burger-menu__close");
+        let links = menu.find(".menu__list__item");
+        let overlay = menu.find(".burger-menu__overlay");
+
+        function toggleMenu() {
+            if ($(window).width() < 560) {
+                menu.toggleClass("burger-menu_active");
+
+                if (menu.hasClass("burger-menu_active")) {
+                $("body").css("overflow", "hidden");
+                } else {
+                $("body").css("overflow", "visible");
+                }
+            }
+        }
+        button.click(toggleMenu);
+        
+        button_close.on("click", toggleMenu);
+        links.on("click", toggleMenu);
+        overlay.on("click", toggleMenu);
+    }
+    burgerMenu(".nav");
+    /*var width = 120; 
+    var count = 1; 
+
+    var list = $('#carousel');
+    var listElems = $('.carousel li');
+    var position = 0;
+    list.style.marginLeft = 40 + "px";
+
+    $('#prev').onclick = function() {
+        position = Math.min(position + width * count, 0)
+        list.style.marginLeft = position + 'px';
+    };
+
+    $('#next').onclick = function() {
+        position = Math.max(position - width * count, -width * (listElems.length - count));
+        list.style.marginLeft = position + 'px';
+    };*/
+});

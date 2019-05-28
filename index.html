@@ -4,35 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bread</title>
     <link href="style.css" rel="stylesheet">
     <link href="normalize.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Alegreya|Playfair+Display&display=swap" rel="stylesheet"> 
-    <title>Bread</title>
+    <link href="https://fonts.googleapis.com/css?family=Alegreya|Playfair+Display&display=swap" rel="stylesheet">
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous"></script>
+    <script src="scripts.js"></script> 
 </head>
 <body>
     <div class="head__bg">
         <div class="page__color_black nav_height">
             <div class="page__wrap__margin">
                 <nav class="nav color_white"> 
-                    <div class="nav__burger-menu">
-                        <img class="nav__burger-menu__img" src="img/head_bottom-image.png" alt="">  
-                    </div>
                     <div class="nav__logo">
                         <a href="#"><img src="img/logo_gustoso.png" alt="Logo"></a>
                     </div>
-                    <div class="nav__menu">
-                        <ul class="nav__menu__list">
-                            <li class="menu__list__item"><a href="">Welcome</a></li>
-                            <li class="menu__list__item">~</li>
-                            <li class="menu__list__item"><a href="">Menu</a></li>
-                            <li class="menu__list__item">~</li>
-                            <li class="menu__list__item"><a href="">Reservations</a></li>
-                            <li class="menu__list__item">~</li>
-                            <li class="menu__list__item"><a href="">News</a></li>
-                            <li class="menu__list__item">~</li>
-                            <li class="menu__list__item"><a href="">Contact</a></li>
-                        </ul>
+                    <div class="nav__block">
+                        <div class="nav__burger-menu__button">
+                            <img class="nav__burger-menu__img" src="img/head_bottom-image.png" alt="">  
+                        </div>
+                        <div class="nav__menu nav__burger-menu">
+                            <img class="nav__burger-menu__close" src="img/head_bottom-image.png" alt="">
+                            <ul class="nav__menu__list">
+                                <li class="menu__list__item"><a href="#">Welcome</a></li>
+                                <li class="menu__list__item tilde">~</li>
+                                <li class="menu__list__item"><a href="#">Menu</a></li>
+                                <li class="menu__list__item tilde">~</li>
+                                <li class="menu__list__item"><a href="#">Reservations</a></li>
+                                <li class="menu__list__item tilde">~</li>
+                                <li class="menu__list__item"><a href="#">News</a></li>
+                                <li class="menu__list__item tilde">~</li>
+                                <li class="menu__list__item"><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
                     </div>
+                    <div class="burger-menu__overlay"></div>
                     <div class="nav__social">
                         <img class="social__icon" src="img/icon_twitter.png">
                         <img class="social__icon" src="img/icon_facebook.png">
@@ -41,7 +50,7 @@
                 </nav>
             </div>
         </div>
-        <div class="page__bg-9">
+        <section class="page__bg-9">
             <div class="page__wrap__margin">
                 <div class="header color_white"> 
                     <h1 class="header__head">Pastry with love</h1>
@@ -54,7 +63,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         <div class="head__bread">
             <img src="img/head_bottom-image.png" alt="">  
         </div>
@@ -135,18 +144,20 @@
                                     Donec vitae sapien ut libero venenatis 
                                     faucibus. Nullam quis ante. Etiam sit amet 
                                     orci eget eros faucibus.</p>
-                                <div class="folder-2__right-col__slider">
-                                    <div class="slider__arrow">
-                                        <div class="slider__arrow__img_l"></div>
+                                <div class="folder-2__right-col__carousel">
+                                    <div class="carousel__arrow prev" id="prev"></div>
+                                    <div class="carousel__gallery">
+                                        <ul class="carousel__imgs" id="carousel">
+                                            <li><img src="img/body_second_image_1.png" alt=""></li>
+                                            <li><img src="img/body_second_image_2.png" alt=""></li>
+                                            <li><img src="img/body_second_image_3.png" alt=""></li>
+                                            <li><img src="img/body_second_image_2.png" alt=""></li>
+                                            <li><img src="img/body_second_image_3.png" alt=""></li>
+                                            <li><img src="img/body_second_image_1.png" alt=""></li>
+                                            <li><img src="img/body_second_image_2.png" alt=""></li>
+                                        </ul>
                                     </div>
-                                    <div class="slider__imgs">
-                                        <img src="img/body_second_image_1.png" alt="">
-                                        <img src="img/body_second_image_2.png" alt="">
-                                        <img src="img/body_second_image_3.png" alt="">
-                                    </div>
-                                    <div class="slider__arrow">
-                                        <div class="slider__arrow__img_r"></div>
-                                    </div>
+                                    <div class="carousel__arrow next" id="next"></div>
                                 </div>
                                 <div class="drag-menu__circle circle bg_color_white"></div>
                                 <div class="drag-menu__menu"></div>
